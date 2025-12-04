@@ -1,0 +1,13 @@
+﻿Console.Write("Number of small carpets: ");
+int smallRoom = Convert.ToInt32(Console.ReadLine());
+Console.Write("Number of large carpets: ");
+int largeRoom = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Price per small room: $25");
+Console.WriteLine("Price per large room: $35");
+double cost = (smallRoom * 25) + (largeRoom * 35);
+double tax = cost * (6.0 / 100);
+double total = cost + tax;
+Console.WriteLine("Cost : $" + cost);
+Console.WriteLine("Tax : $" + tax);
+Console.WriteLine("Total estimate : $" + total);
+Console.WriteLine("This estimate is valid for 30 days");
